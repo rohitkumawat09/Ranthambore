@@ -1,0 +1,87 @@
+.header {
+  position: fixed;        
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;           
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background-color: #fffdf3;
+  padding: 26px 40px;
+  border-bottom: 1px solid #eee;
+  font-family: serif;
+}
+
+body {
+  padding-top: 82px;   
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #4b1d2c;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #8b0f3a;
+}
+
+.active {
+  border-bottom: 2px solid #8b0f3a;
+  padding-bottom: 4px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+/* Center Logo */
+.logoBox {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fffdf3;
+  padding: 31px 116px 10px;
+  border-radius: 0 0 40px 40px;
+}
+
+.logo {
+  height: 100px;
+}
+
+/* Right Section */
+.right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Button */
+.btn {
+  background-color: #8b0f3a;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #6f0c2f;
+}
+.btn:active {
+  background-color: #5a0a27;
+}

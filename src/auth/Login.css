@@ -1,0 +1,67 @@
+.login {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.loginLeft {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.loginRight {
+  flex: 1;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  height: 100%;
+  padding: 70px;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 25px;
+}
+
+.form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.form button {
+  width: 100%;
+  padding: 15px;
+  background: #ff6a00;
+  color: #fff;
+  border-radius: 14px;
+  border: none;
+}
+
+.stats {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.signupText span,
+.terms span {
+  color: #ff6a00;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .login {
+    flex-direction: column;
+  }
+}
+    

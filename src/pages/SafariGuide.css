@@ -1,0 +1,238 @@
+/* ===============================
+   SAFARI GUIDE SECTION
+================================ */
+.safariGuide {
+  padding: 120px 80px;
+  background: #fffdf4;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+.guideHeader {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.smallTitle {
+  color: #8b0039;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.guideHeader h2 {
+  font-size: 44px;
+  margin-top: 12px;
+  color: #111;
+}
+
+.guideHeader h2 span {
+  color: #8b0039;
+}
+
+/* GRID */
+.guideGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* ===============================
+   LEFT IMAGE CARD
+================================ */
+.guideImageCard {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.guideImageCard img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+/* IMAGE OVERLAY */
+.imageOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.2)
+  );
+  color: #fff;
+}
+
+.imageOverlay h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.imageOverlay p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* BUTTON */
+.btnPrimary {
+  display: inline-block;
+  background: #8b0039;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background: #6e002d;
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   RIGHT CONTENT
+================================ */
+.guideInfo {
+  background: #fff;
+  padding: 36px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.guideInfo h3 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tabs span {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #f1f1f1;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tabs span.active {
+  background: #8b0039;
+  color: #fff;
+}
+
+/* TEXT */
+.infoText {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ZONE LIST */
+.zoneList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.zoneList li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.zoneList li span {
+  font-weight: 600;
+  color: #8b0039;
+}
+
+/* HELP BOX */
+.helpBox {
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.helpBox p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.phoneLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #8b0039;
+  text-decoration: none;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+/* LAPTOP */
+@media (max-width: 1200px) {
+  .guideImageCard img {
+    height: 480px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .safariGuide {
+    padding: 80px 40px;
+  }
+
+  .guideGrid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .guideImageCard img {
+    height: 460px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .safariGuide {
+    padding: 60px 20px;
+  }
+
+  .guideHeader h2 {
+    font-size: 32px;
+  }
+
+  .guideImageCard img {
+    height: 380px;
+  }
+
+  .guideInfo {
+    padding: 24px;
+  }
+
+  .imageOverlay h3 {
+    font-size: 18px;
+  }
+
+  .imageOverlay p {
+    font-size: 13px;
+  }
+}

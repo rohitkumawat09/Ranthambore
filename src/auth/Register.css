@@ -1,0 +1,70 @@
+.register {
+  display: flex;
+  height: 90vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.registerLeft {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay h1 { font-size: 42px; }
+.overlay p { font-size: 18px; margin: 15px 0 40px; }
+
+.stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stats h3 { font-size: 28px; }
+.stats span { font-size: 14px; }
+
+.registerRight {
+  flex: 1;
+  padding: 70px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo { width: 140px; margin-bottom: 25px; }
+
+.subtitle { color: #555; margin-bottom: 25px; }
+
+.form input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.form button {
+  padding: 15px;
+  background: #ff6a00;
+  color: #fff;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.loginText, .terms { text-align: center; margin-top: 20px; }
+.loginText span, .terms span { color: #ff6a00; cursor: pointer; }
+
+@media (max-width: 900px) {
+  .register { flex-direction: column; }
+  .registerLeft { height: 40vh; }
+}
