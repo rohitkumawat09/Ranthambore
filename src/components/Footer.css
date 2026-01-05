@@ -140,3 +140,18 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 992px) {
+  .footer-container { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .footer-logo { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .footer { padding: 3rem 1rem 1.5rem; }
+  .footer-container { grid-template-columns: 1fr; gap: 1rem; }
+  .footer-logo { font-size: 1.6rem; }
+  .footer-text, .footer-copy { font-size: 0.9rem; }
+  .footer-col h3 { font-size: 1rem; }
+  .social-icons { justify-content: flex-start; }
+}
+

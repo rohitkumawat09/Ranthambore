@@ -64,7 +64,18 @@
 .loginText, .terms { text-align: center; margin-top: 20px; }
 .loginText span, .terms span { color: #ff6a00; cursor: pointer; }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .register { flex-direction: column; }
   .registerLeft { height: 40vh; }
+  .registerRight { padding: 40px; }
+  .overlay { padding: 40px; }
 }
+
+@media (max-width: 480px) {
+  .registerLeft { height: 35vh; padding: 24px; }
+  .overlay h1 { font-size: 28px; }
+  .overlay p { font-size: 14px; }
+  .registerRight { padding: 24px; }
+  .stats { flex-direction: column; gap: 12px; }
+}
+

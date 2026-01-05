@@ -59,9 +59,16 @@
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
-  .login {
-    flex-direction: column;
-  }
+@media (max-width: 992px) {
+  .login { flex-direction: column; }
+  .loginRight { padding: 40px; }
+  .overlay { padding: 40px; }
+}
+
+@media (max-width: 480px) {
+  .loginLeft { height: 30vh; }
+  .overlay { padding: 24px; }
+  .loginRight { padding: 20px; }
+  .logo { width: 120px; }
 }
     
