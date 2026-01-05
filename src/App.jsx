@@ -6,6 +6,9 @@ import Home from './pages/Home.jsx';
 import Register from './auth/Register.jsx';
 import Login from './auth/Login.jsx';
 import { First } from './First';
+import AboutUs from './pages/AboutUs.jsx';
+import Contactus from './pages/Contactus.jsx';
+import CarRental from './pages/CarRental.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -22,6 +25,15 @@ const router = createBrowserRouter([
         path: "Login",
         element: <Login />,
       },
+      { path: 'AboutUs', element: <AboutUs /> },
+      {
+        path: 'Contactus', element: <Contactus />,
+      }
+
+      ,
+      {
+        path: 'CarRental', element: <CarRental />
+      }
     ],
   },
 ]);

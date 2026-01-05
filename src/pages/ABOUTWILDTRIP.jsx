@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./About.css";
+import "./ABOUTWILDTRIP.css";
 
 const Counter = ({ end, suffix = "" }) => {
   const [count, setCount] = useState(0);
