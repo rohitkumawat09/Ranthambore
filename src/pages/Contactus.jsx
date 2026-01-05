@@ -43,7 +43,7 @@ const Contactus = () => {
       const y = window.scrollY;
       setScrollY(y);
       if (heroRef.current) {
-        heroRef.current.style.setProperty('--cu-hero-translateY', `${y * 0.5}px`);
+        heroRef.current.style.setProperty('--au-hero-translateY', `${y * 0.5}px`);
       }
       
       const elements = document.querySelectorAll('.cu-animate-on-scroll');
@@ -158,59 +158,49 @@ const Contactus = () => {
         <div className="cu-orb cu-orb-3" />
       </div>
 
-      {/* Hero Section */}
-      <section className="cu-hero" ref={heroRef}>
-        <div className="cu-hero-bg" />
-        
-        {/* Floating Particles */}
-        <div className="cu-hero-particles">
+      {/* HERO SECTION (copied from AboutUs, adapted for Contact) */}
+      <section className="au-hero" ref={heroRef}>
+        <div className="au-hero-bg" />
+        <div className="au-hero-particles">
           {[...Array(25)].map((_, i) => (
             <div
               key={i}
-              className="cu-particle"
+              className="au-particle"
               style={{
-                '--cu-particle-left': `${Math.random() * 100}%`,
-                '--cu-particle-delay': `${Math.random() * 5}s`,
-                '--cu-particle-dur': `${8 + Math.random() * 12}s`
+                ['--au-left']: `${Math.random() * 100}%`,
+                ['--au-delay']: `${Math.random() * 5}s`,
+                ['--au-dur']: `${8 + Math.random() * 12}s`
               }}
             />
           ))}
         </div>
-        
-        <div className="cu-hero-overlay">
-          <div className="cu-hero-content">
-            <div className="cu-hero-badge" data-animate id="cu-badge">
-              <Sparkles className="cu-badge-icon" />
-              <span>PREMIUM WILDLIFE EXPERIENCES</span>
-            </div>
-
-            <h1 className="cu-hero-title" data-animate id="cu-title">
-              Let's Plan Your
-              <span className="cu-hero-title-gradient">Wild Adventure</span>
-            </h1>
-
-            <p className="cu-hero-description" data-animate id="cu-desc">
-              Experience the majestic tigers of Ranthambore with our expert guides. 
-              From safari bookings to luxury accommodations, we handle everything.
+        <div className="au-hero-overlay">
+          <div className="au-hero-content">
+            <p className="au-breadcrumb" data-animate id="au-breadcrumb">
+              Home → Contact Us
             </p>
-
-            <div className="cu-hero-buttons" data-animate id="cu-btns">
-              <button className="cu-btn-primary">
-                Book Safari Now
-                <ArrowRight className="cu-btn-icon" />
+            <h1 data-animate id="au-hero-title">
+              Contact Ranthambore Safari Booking <br /> &amp; Rajasthan Tour Packages
+            </h1>
+            <p className="au-hero-sub" data-animate id="au-hero-sub">
+              Have questions or ready to book? Reach out — we'll plan the perfect wildlife experience for you.
+            </p>
+            <div className="au-hero-buttons" data-animate id="au-hero-btns">
+              <button className="au-primary-btn">
+                <span>Contact Us</span>
+                <div className="au-btn-shine"></div>
               </button>
-              <button className="cu-btn-secondary">
+              <button className="au-secondary-btn">
                 View Packages
               </button>
             </div>
           </div>
         </div>
-        
-        <div className="cu-hero-scroll-indicator">
-          <div className="cu-scroll-mouse"></div>
+        <div className="au-hero-scroll-indicator">
+          <div className="au-scroll-mouse"></div>
           <p>Scroll to explore</p>
         </div>
-      </section>
+      </section> 
 
       {/* Stats Section */}
       <section className="cu-stats-section cu-animate-on-scroll">

@@ -628,3 +628,20 @@
     font-size: 22px;
   }
 }
+
+@media (max-width: 992px) {
+  .hero, .slider, .au-hero, .cu-hero, .home-hero { min-height: 80vh; }
+  .slider__content, .au-hero-content, .cu-hero-content { padding: 0 32px; }
+  .slider__title, .au-hero-overlay h1, .cu-hero-title, h1 { font-size: clamp(28px, 5vw, 40px); }
+  .slider__button, .btn, .allBtn { padding: 12px 28px; font-size: 16px; }
+  img, .img-responsive { max-width: 100%; height: auto; }
+}
+
+@media (max-width: 480px) {
+  .hero, .slider, .au-hero, .cu-hero, .home-hero { min-height: 60vh; }
+  .slider__content, .au-hero-content, .cu-hero-content { padding: 0 20px; }
+  .slider__title, .au-hero-overlay h1, .cu-hero-title, h1 { font-size: clamp(20px, 6vw, 28px); }
+  .slider__button, .btn, .allBtn { width: 100%; padding: 12px; font-size: 16px; }
+  .slider__dots, .slider__nav { display: none; }
+  img, .img-responsive { max-width: 100%; height: auto; display: block; }
+}

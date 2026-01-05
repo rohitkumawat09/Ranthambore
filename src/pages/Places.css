@@ -616,3 +616,16 @@
     height: 1.25rem;
   }
 }
+
+@media (max-width: 992px) {
+  .places-section { padding: 6rem 20px; }
+  .places-cards { height: auto; }
+  .place-card { width: 100%; max-width: 420px; height: auto; }
+  .place-title { font-size: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  .places-section { padding: 4rem 1rem; }
+  .place-card { max-width: 100%; height: auto; }
+  .place-title { font-size: 1.375rem; }
+} 

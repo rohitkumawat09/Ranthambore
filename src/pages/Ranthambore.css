@@ -188,3 +188,15 @@
     height: 330px;
   }
 }
+
+@media (max-width: 992px) {
+  .whyChoose { padding: 80px 24px; }
+  .whyLeft h2 { font-size: 34px; }
+  .whyImage img { width: 100%; max-width: 420px; height: auto; }
+}
+
+@media (max-width: 480px) {
+  .whyChoose { padding: 60px 16px; }
+  .whyLeft h2 { font-size: 28px; }
+  .whyImage img { width: 100%; max-width: 320px; height: auto; }
+} 

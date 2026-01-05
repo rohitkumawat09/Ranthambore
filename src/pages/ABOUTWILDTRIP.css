@@ -572,3 +572,17 @@
     font-size: 12px;
   }
 }
+
+@media (max-width: 992px) {
+  .about-section { padding: 80px 24px; }
+  .about-container { flex-direction: column; gap: 32px; }
+  .about-images { width: 100%; max-width: 520px; }
+  .about-title { font-size: clamp(32px, 6vw, 44px); }
+}
+
+@media (max-width: 480px) {
+  .about-section { padding: 48px 16px; }
+  .about-title { font-size: 26px; }
+  .img-large { height: 320px; }
+  .img-small { width: 180px; height: 220px; }
+}

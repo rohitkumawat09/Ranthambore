@@ -133,6 +133,12 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 992px) {
+  .serviceTop { padding: 80px 32px; }
+  .serviceCards { gap: 24px; }
+}
+
 @media (max-width: 600px) {
   .serviceTop {
     padding: 60px 20px;
@@ -140,4 +146,9 @@
   .serviceCards {
     padding: 40px 20px 80px;
   }
-}   
+}
+
+@media (max-width: 480px) {
+  .serviceTop { padding: 40px 16px; }
+  .serviceCards { gap: 16px; }
+} 

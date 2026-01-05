@@ -140,6 +140,15 @@
   }
 }
 
+@media (max-width: 992px) {
+  .packageGrid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+  .packageSection { padding: 80px 32px; }
+  .packageTitle { font-size: clamp(32px, 5vw, 42px); }
+}
+
 @media (max-width: 768px) {
   .packageGrid {
     grid-template-columns: 1fr;
@@ -152,4 +161,6 @@
   .packageTitle {
     font-size: 36px;
   }
-}
+  .packageSection { padding: 60px 16px; }
+  .allBtn { width: 100%; padding: 12px; }
+} 

@@ -1244,73 +1244,120 @@ blockquote {
 }
 
 /* ===================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN (Desktop → Tablet → Mobile)
    =================================== */
+/* Desktop is default; Tablet = max-width: 992px; Mobile = max-width: 480px */
+
 @media (max-width: 1200px) {
   .founder-grid {
     grid-template-columns: 1fr;
   }
 }
 
+/* ---------- Tablet ---------- */
 @media (max-width: 992px) {
+  .au-hero {
+    min-height: 80vh;
+  }
+
   .au-hero-overlay {
     padding: 80px 32px;
   }
 
-  .au-story-section,
-  .au-values-section,
-  .au-founder-section,
-  .testimonials-section,
-  .au-experience,
-  .au-cta-section {
-    padding: 110px 32px;
-  }
-}
-
-@media (max-width: 768px) {
   .au-hero-overlay h1 {
-    font-size: 38px;
+    font-size: clamp(32px, 6vw, 56px);
   }
 
   .au-hero-sub {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .au-hero-buttons {
-    flex-direction: column;
-    align-items: flex-start;
+    gap: 16px;
   }
 
+  /* Stack long lists into single columns */
   .au-timeline {
-    gap: 28px;
+    grid-template-columns: 1fr;
   }
 
   .au-values-grid,
   .au-experience-cards {
+    grid-template-columns: 1fr;
     gap: 28px;
   }
 
+  .au-founder-grid {
+    grid-template-columns: 1fr;
+  }
+
   .au-cta-content {
-    padding: 70px 30px;
-    border-radius: 36px;
+    padding: 80px 32px;
   }
 }
 
+/* ---------- Mobile ---------- */
 @media (max-width: 480px) {
+  .au-hero {
+    min-height: 60vh;
+  }
+
   .au-hero-overlay {
-    padding: 70px 24px;
+    padding: 48px 20px;
   }
 
-  .au-section-sub {
-    margin-bottom: 60px;
+  .au-breadcrumb {
+    font-size: 11px;
+    letter-spacing: 1px;
   }
 
-  .au-cta-content h2 {
-    font-size: 32px;
+  .au-hero-overlay h1 {
+    font-size: 28px;
+    line-height: 1.15;
   }
 
-  .au-cta-btn {
+  .au-hero-sub {
+    font-size: 15px;
+  }
+
+  .au-hero-buttons {
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .au-hero-buttons button {
     width: 100%;
-    justify-content: center;
+  }
+
+  /* Hide decorative particles on small screens for performance */
+  .au-hero-particles,
+  .au-particle {
+    display: none;
+  }
+
+  /* Hide scroll indicator on very small devices */
+  .au-hero-scroll-indicator { display: none; }
+
+  /* Make timeline/cards comfortable on mobile */
+  .au-timeline {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .au-timeline-card,
+  .au-value-card,
+  .au-exp-card {
+    padding: 28px;
+  }
+
+  .au-values-grid,
+  .au-experience-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .au-cta-content {
+    padding: 60px 20px;
   }
 }

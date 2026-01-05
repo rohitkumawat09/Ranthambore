@@ -500,12 +500,12 @@
   }
 }
 
-@media (max-width: 480px) {
-  .testimonial-card {
-    padding: 1.5rem;
-  }
-
-  .card-text {
-    min-height: auto;
-  }
+@media (max-width: 992px) {
+  .main-heading { font-size: 2rem; }
+  .cards-grid { grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 20px; }
 }
+
+@media (max-width: 480px) {
+  .testimonial-card { padding: 1rem; }
+  .card-text { min-height: auto; font-size: 0.95rem; }
+} 

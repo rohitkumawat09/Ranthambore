@@ -236,3 +236,15 @@
     font-size: 13px;
   }
 }
+
+@media (max-width: 992px) {
+  .safariGuide { padding: 80px 32px; }
+  .guideGrid { grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 24px; }
+  .guideImageCard img { height: auto; max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .safariGuide { padding: 60px 16px; }
+  .guideHeader h2 { font-size: 28px; }
+  .guideImageCard img { height: auto; }
+} 
