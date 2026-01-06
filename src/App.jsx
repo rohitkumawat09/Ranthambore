@@ -8,7 +8,8 @@ import Login from './auth/Login.jsx';
 import { First } from './First';
 import AboutUs from './pages/AboutUs.jsx';
 import Contactus from './pages/Contactus.jsx';
-import CarRental from './pages/CarRental.jsx';
+import Carboock from './pages/Carboock.jsx';
+import SafariBooking from './pages/SafariBooking.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -32,7 +33,11 @@ const router = createBrowserRouter([
 
       ,
       {
-        path: 'CarRental', element: <CarRental />
+        path: 'Carboock', element: <Carboock />
+      }
+      ,
+      {
+path: 'SafariBooking', element: <SafariBooking />
       }
     ],
   },

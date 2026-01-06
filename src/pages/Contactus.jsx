@@ -39,7 +39,7 @@ const Contactus = () => {
       }
     };
 
-    const handleScroll = () => {
+    const handleScroll = () =>   {
       const y = window.scrollY;
       setScrollY(y);
       if (heroRef.current) {

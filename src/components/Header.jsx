@@ -27,8 +27,8 @@ const Header = ({ openLogin }) => {
             <div className="dropdown-content">
               <Link className="link" to="/safari-packages">Safari Packages</Link>
               <Link className="link" to="/custom-packages">Custom Packages</Link>
-              <Link className="link" to="CarRental">CarRental</Link>
-              <Link className="link" to="/transportation">Transportation</Link>
+              <Link className="link" to="Carboock">Carboock</Link>
+              <Link className="link" to="SafariBooking">SafariBooking</Link>
             </div>
           </div>
 
